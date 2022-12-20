@@ -14,7 +14,7 @@ let board = new Board();
 function play() {
   board.reset();
   console.table(board.grid);
-//   board=getemptyBoard();
+  // board=getEmptyBoard();
   let piece = new Piece(ctx);
   piece.draw();
   board.piece=piece;
