@@ -10,7 +10,7 @@ class Piece{
     }
 
     spawn(){
-        this.color = 'blue';
+        this.color = 'black';
         this.shape = [
             [2,0,0],
             [2,2,2],
@@ -23,14 +23,14 @@ class Piece{
     }
 
     draw(){
-        this.ctx.fillstyle = this.color;
-        this.shape.array.forEach((row,y)) => {
-            row.array.forEach((value,x)) => {
+        this.ctx.fillStyle = this.color;
+        this.shape.array.forEach((row,y) => {
+            row.array.forEach((value,x) => {
                 if(value>0){
                     this.ctx.fillRect(this.x + x, this.y+y,1,1);
                 }
-            };
-        };
+            });
+        });
     }
 
 }
