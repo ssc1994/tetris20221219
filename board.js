@@ -1,3 +1,5 @@
+//보드 로직파일
+
 class Board {
     grid;
     

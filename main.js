@@ -1,3 +1,5 @@
+//게임 초기화와 종료로직 코드
+
 const canvas = document.getElementById('board');
 const ctx = canvas.getContext('2d');
 
@@ -5,7 +7,7 @@ const ctx = canvas.getContext('2d');
 ctx.canvas.width = COLS * BLOCK_SIZE;
 ctx.canvas.height = ROWS * BLOCK_SIZE;
 
-//블록의 크기 변경
+//매번 block_size로 계산할 필요 없이 블록의 크기를 1로 취급함
 ctx.scale(BLOCK_SIZE,BLOCK_SIZE);
 
 let board = new Board();
